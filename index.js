@@ -5,7 +5,7 @@ import booksRouter from "./routes/books.js";
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 await mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Database connected'))
