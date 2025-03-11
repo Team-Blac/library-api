@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon .",
     "start": "node ."
-
   },
   "repository": {
     "type": "git",
