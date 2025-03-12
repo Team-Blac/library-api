@@ -6,7 +6,7 @@ const booksSchema = new Schema({
     genre: { type: String },
     description: { type: String },
     publishedYear: { type: Number },
-    coverImage: { type: String },
+    image: { type: String },
     quantityAvailable: { type: Number, required: true, default: 1 },
 }, {
 
