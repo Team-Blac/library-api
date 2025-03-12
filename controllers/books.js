@@ -25,7 +25,10 @@ export const getBook = async(req, res, next) => {
 
 export const addBook = async (req, res) => {
     try {
-        const { error, value } = addProductValidator.validate(req.body, { abortEarly: false });
+        const { error, value } = addProductValidator.validate({
+            ...req.body,
+            image: req.file.filename
+        });
         if (error) {
             return res.status(422).json(error);
         }
