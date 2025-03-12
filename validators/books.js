@@ -6,7 +6,7 @@ export const addProductValidator = Joi.object({
   genre: Joi.string().required(),
   description: Joi.string().required(),
   publishedYear: Joi.number().required(),
-  coverImage: Joi.string().required(),
+  image: Joi.string().required(),
   quantityAvailable: Joi.number().required(),
 });
 

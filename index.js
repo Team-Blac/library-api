@@ -6,7 +6,7 @@ import cors from "cors"
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3100;
 
 await mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Database connected'))
