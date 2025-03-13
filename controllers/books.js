@@ -23,7 +23,7 @@ export const getBook = async(req, res, next) => {
     }
 }
 
-export const addBook = async (req, res) => {
+export const addBook = async (req, res,next) => {
     try {
         const { error, value } = addProductValidator.validate({
             ...req.body,
